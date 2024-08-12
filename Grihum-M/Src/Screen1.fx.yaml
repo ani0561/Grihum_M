@@ -261,6 +261,19 @@
                         Y: =522
                         ZIndex: =19
 
+                    Image4_1 As image:
+                        Height: =60
+                        Image: ='1134458195'
+                        ImagePosition: =ImagePosition.Fill
+                        RadiusBottomLeft: =60
+                        RadiusBottomRight: =60
+                        RadiusTopLeft: =60
+                        RadiusTopRight: =60
+                        Width: =60
+                        X: =563
+                        Y: =38
+                        ZIndex: =20
+
             Icon9 As icon.Search:
                 Color: =RGBA(0, 13, 75, 1)
                 Height: =40
