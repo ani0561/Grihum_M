@@ -368,7 +368,7 @@
                 )
             );
             
-            Navigate('Screen2');
+            Navigate(Screen2);
              
         Width: =60
         X: =471
