@@ -228,7 +228,7 @@ Screen2 As screen:
                                 Reset(Dropdown1);
                                 
                             
-                                Navigate('Screen1')
+                                Navigate(Screen1)
                             );
                             
                         Text: ="Post"

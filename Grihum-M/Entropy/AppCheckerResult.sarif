@@ -14,46 +14,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "HomeScreen.HomeScreenContainer.CreateAccountbtn.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "HomeScreen.HomeScreenContainer.CreateAccountbtn.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": "SignUpScreen"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "HomeScreen",
-                "type": "HomeScreen.HomeScreenContainer.CreateAccountbtn"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "SignUpScreen"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "SignInScreen.SignInScreenContainer.'ButtonSign-In'.OnSelect"
                 }
               ],
@@ -94,19 +54,59 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "OtpValidationScreen.OTPValidationScreenContainer.TextInputotp.AccessibleLabel"
+                  "fullyQualifiedName": "HomeScreen.HomeScreenContainer.CreateAccountbtn.OnSelect"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "OtpValidationScreen.OTPValidationScreenContainer.TextInputotp.AccessibleLabel",
+                  "fullyQualifiedName": "HomeScreen.HomeScreenContainer.CreateAccountbtn.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 12,
+                  "charOffset": 9,
+                  "snippet": {
+                    "text": "SignUpScreen"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "HomeScreen",
+                "type": "HomeScreen.HomeScreenContainer.CreateAccountbtn"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "SignUpScreen"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SignInScreen.SignInScreenContainer.TextInputEmail.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SignInScreen.SignInScreenContainer.TextInputEmail.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "OtpValidationScreen",
-                "type": "OtpValidationScreen.OTPValidationScreenContainer.TextInputotp"
+                "module": "SignInScreen",
+                "type": "SignInScreen.SignInScreenContainer.TextInputEmail"
               }
             }
           ],
@@ -124,19 +124,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "OtpValidationScreen.OTPValidationScreenContainer.TextInputotpp.AccessibleLabel"
+                  "fullyQualifiedName": "SignInScreen.SignInScreenContainer.TextInputPassword.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "OtpValidationScreen.OTPValidationScreenContainer.TextInputotpp.AccessibleLabel",
+                  "fullyQualifiedName": "SignInScreen.SignInScreenContainer.TextInputPassword.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "OtpValidationScreen",
-                "type": "OtpValidationScreen.OTPValidationScreenContainer.TextInputotpp"
+                "module": "SignInScreen",
+                "type": "SignInScreen.SignInScreenContainer.TextInputPassword"
               }
             }
           ],
@@ -154,19 +154,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "OtpValidationScreen.OTPValidationScreenContainer.Iconotpp.AccessibleLabel"
+                  "fullyQualifiedName": "SignInScreen.SignInScreenContainer.Icon4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "OtpValidationScreen.OTPValidationScreenContainer.Iconotpp.AccessibleLabel",
+                  "fullyQualifiedName": "SignInScreen.SignInScreenContainer.Icon4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "OtpValidationScreen",
-                "type": "OtpValidationScreen.OTPValidationScreenContainer.Iconotpp"
+                "module": "SignInScreen",
+                "type": "SignInScreen.SignInScreenContainer.Icon4"
               }
             }
           ],
@@ -184,19 +184,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "OtpValidationScreen.OTPValidationScreenContainer.Iconotpp.TabIndex"
+                  "fullyQualifiedName": "SignInScreen.SignInScreenContainer.Icon4.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "OtpValidationScreen.OTPValidationScreenContainer.Iconotpp.TabIndex",
+                  "fullyQualifiedName": "SignInScreen.SignInScreenContainer.Icon4.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "OtpValidationScreen",
-                "type": "OtpValidationScreen.OTPValidationScreenContainer.Iconotpp"
+                "module": "SignInScreen",
+                "type": "SignInScreen.SignInScreenContainer.Icon4"
               }
             }
           ],
@@ -214,19 +214,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "OtpValidationScreen.OTPValidationScreenContainer.TextInputotpcp.AccessibleLabel"
+                  "fullyQualifiedName": "SignUpScreen_1.SignUpScreenContainer_1.TextInputsignupEmail_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "OtpValidationScreen.OTPValidationScreenContainer.TextInputotpcp.AccessibleLabel",
+                  "fullyQualifiedName": "SignUpScreen_1.SignUpScreenContainer_1.TextInputsignupEmail_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "OtpValidationScreen",
-                "type": "OtpValidationScreen.OTPValidationScreenContainer.TextInputotpcp"
+                "module": "SignUpScreen_1",
+                "type": "SignUpScreen_1.SignUpScreenContainer_1.TextInputsignupEmail_1"
               }
             }
           ],
@@ -244,19 +244,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "OtpValidationScreen.OTPValidationScreenContainer.IconOtpcp.AccessibleLabel"
+                  "fullyQualifiedName": "SignUpScreen_1.SignUpScreenContainer_1.TextInputsignupp_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "OtpValidationScreen.OTPValidationScreenContainer.IconOtpcp.AccessibleLabel",
+                  "fullyQualifiedName": "SignUpScreen_1.SignUpScreenContainer_1.TextInputsignupp_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "OtpValidationScreen",
-                "type": "OtpValidationScreen.OTPValidationScreenContainer.IconOtpcp"
+                "module": "SignUpScreen_1",
+                "type": "SignUpScreen_1.SignUpScreenContainer_1.TextInputsignupp_1"
               }
             }
           ],
@@ -274,19 +274,139 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "OtpValidationScreen.OTPValidationScreenContainer.IconOtpcp.TabIndex"
+                  "fullyQualifiedName": "SignUpScreen_1.SignUpScreenContainer_1.Iconsignupp_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "OtpValidationScreen.OTPValidationScreenContainer.IconOtpcp.TabIndex",
+                  "fullyQualifiedName": "SignUpScreen_1.SignUpScreenContainer_1.Iconsignupp_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SignUpScreen_1",
+                "type": "SignUpScreen_1.SignUpScreenContainer_1.Iconsignupp_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SignUpScreen_1.SignUpScreenContainer_1.Iconsignupp_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SignUpScreen_1.SignUpScreenContainer_1.Iconsignupp_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "OtpValidationScreen",
-                "type": "OtpValidationScreen.OTPValidationScreenContainer.IconOtpcp"
+                "module": "SignUpScreen_1",
+                "type": "SignUpScreen_1.SignUpScreenContainer_1.Iconsignupp_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SignUpScreen_1.SignUpScreenContainer_1.TextInputsignupcp_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SignUpScreen_1.SignUpScreenContainer_1.TextInputsignupcp_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SignUpScreen_1",
+                "type": "SignUpScreen_1.SignUpScreenContainer_1.TextInputsignupcp_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SignUpScreen_1.SignUpScreenContainer_1.Iconsignupcp_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SignUpScreen_1.SignUpScreenContainer_1.Iconsignupcp_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SignUpScreen_1",
+                "type": "SignUpScreen_1.SignUpScreenContainer_1.Iconsignupcp_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SignUpScreen_1.SignUpScreenContainer_1.Iconsignupcp_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SignUpScreen_1.SignUpScreenContainer_1.Iconsignupcp_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "SignUpScreen_1",
+                "type": "SignUpScreen_1.SignUpScreenContainer_1.Iconsignupcp_1"
               }
             }
           ],
@@ -692,19 +812,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SignInScreen.SignInScreenContainer.TextInputEmail.AccessibleLabel"
+                  "fullyQualifiedName": "OtpValidationScreen.OTPValidationScreenContainer.TextInputotp.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SignInScreen.SignInScreenContainer.TextInputEmail.AccessibleLabel",
+                  "fullyQualifiedName": "OtpValidationScreen.OTPValidationScreenContainer.TextInputotp.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "SignInScreen",
-                "type": "SignInScreen.SignInScreenContainer.TextInputEmail"
+                "module": "OtpValidationScreen",
+                "type": "OtpValidationScreen.OTPValidationScreenContainer.TextInputotp"
               }
             }
           ],
@@ -722,19 +842,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SignInScreen.SignInScreenContainer.TextInputPassword.AccessibleLabel"
+                  "fullyQualifiedName": "OtpValidationScreen.OTPValidationScreenContainer.TextInputotpp.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SignInScreen.SignInScreenContainer.TextInputPassword.AccessibleLabel",
+                  "fullyQualifiedName": "OtpValidationScreen.OTPValidationScreenContainer.TextInputotpp.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "SignInScreen",
-                "type": "SignInScreen.SignInScreenContainer.TextInputPassword"
+                "module": "OtpValidationScreen",
+                "type": "OtpValidationScreen.OTPValidationScreenContainer.TextInputotpp"
               }
             }
           ],
@@ -752,19 +872,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SignInScreen.SignInScreenContainer.Icon4.AccessibleLabel"
+                  "fullyQualifiedName": "OtpValidationScreen.OTPValidationScreenContainer.Iconotpp.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SignInScreen.SignInScreenContainer.Icon4.AccessibleLabel",
+                  "fullyQualifiedName": "OtpValidationScreen.OTPValidationScreenContainer.Iconotpp.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "SignInScreen",
-                "type": "SignInScreen.SignInScreenContainer.Icon4"
+                "module": "OtpValidationScreen",
+                "type": "OtpValidationScreen.OTPValidationScreenContainer.Iconotpp"
               }
             }
           ],
@@ -782,19 +902,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SignInScreen.SignInScreenContainer.Icon4.TabIndex"
+                  "fullyQualifiedName": "OtpValidationScreen.OTPValidationScreenContainer.Iconotpp.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SignInScreen.SignInScreenContainer.Icon4.TabIndex",
+                  "fullyQualifiedName": "OtpValidationScreen.OTPValidationScreenContainer.Iconotpp.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "SignInScreen",
-                "type": "SignInScreen.SignInScreenContainer.Icon4"
+                "module": "OtpValidationScreen",
+                "type": "OtpValidationScreen.OTPValidationScreenContainer.Iconotpp"
               }
             }
           ],
@@ -812,19 +932,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SignUpScreen_1.SignUpScreenContainer_1.TextInputsignupEmail_1.AccessibleLabel"
+                  "fullyQualifiedName": "OtpValidationScreen.OTPValidationScreenContainer.TextInputotpcp.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SignUpScreen_1.SignUpScreenContainer_1.TextInputsignupEmail_1.AccessibleLabel",
+                  "fullyQualifiedName": "OtpValidationScreen.OTPValidationScreenContainer.TextInputotpcp.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "SignUpScreen_1",
-                "type": "SignUpScreen_1.SignUpScreenContainer_1.TextInputsignupEmail_1"
+                "module": "OtpValidationScreen",
+                "type": "OtpValidationScreen.OTPValidationScreenContainer.TextInputotpcp"
               }
             }
           ],
@@ -842,19 +962,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SignUpScreen_1.SignUpScreenContainer_1.TextInputsignupp_1.AccessibleLabel"
+                  "fullyQualifiedName": "OtpValidationScreen.OTPValidationScreenContainer.IconOtpcp.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SignUpScreen_1.SignUpScreenContainer_1.TextInputsignupp_1.AccessibleLabel",
+                  "fullyQualifiedName": "OtpValidationScreen.OTPValidationScreenContainer.IconOtpcp.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "SignUpScreen_1",
-                "type": "SignUpScreen_1.SignUpScreenContainer_1.TextInputsignupp_1"
+                "module": "OtpValidationScreen",
+                "type": "OtpValidationScreen.OTPValidationScreenContainer.IconOtpcp"
               }
             }
           ],
@@ -872,139 +992,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SignUpScreen_1.SignUpScreenContainer_1.Iconsignupp_1.AccessibleLabel"
+                  "fullyQualifiedName": "OtpValidationScreen.OTPValidationScreenContainer.IconOtpcp.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "SignUpScreen_1.SignUpScreenContainer_1.Iconsignupp_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "SignUpScreen_1",
-                "type": "SignUpScreen_1.SignUpScreenContainer_1.Iconsignupp_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SignUpScreen_1.SignUpScreenContainer_1.Iconsignupp_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SignUpScreen_1.SignUpScreenContainer_1.Iconsignupp_1.TabIndex",
+                  "fullyQualifiedName": "OtpValidationScreen.OTPValidationScreenContainer.IconOtpcp.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "SignUpScreen_1",
-                "type": "SignUpScreen_1.SignUpScreenContainer_1.Iconsignupp_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SignUpScreen_1.SignUpScreenContainer_1.TextInputsignupcp_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SignUpScreen_1.SignUpScreenContainer_1.TextInputsignupcp_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "SignUpScreen_1",
-                "type": "SignUpScreen_1.SignUpScreenContainer_1.TextInputsignupcp_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SignUpScreen_1.SignUpScreenContainer_1.Iconsignupcp_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SignUpScreen_1.SignUpScreenContainer_1.Iconsignupcp_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "SignUpScreen_1",
-                "type": "SignUpScreen_1.SignUpScreenContainer_1.Iconsignupcp_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SignUpScreen_1.SignUpScreenContainer_1.Iconsignupcp_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SignUpScreen_1.SignUpScreenContainer_1.Iconsignupcp_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "SignUpScreen_1",
-                "type": "SignUpScreen_1.SignUpScreenContainer_1.Iconsignupcp_1"
+                "module": "OtpValidationScreen",
+                "type": "OtpValidationScreen.OTPValidationScreenContainer.IconOtpcp"
               }
             }
           ],
