@@ -488,3 +488,112 @@
             Y: =222
             ZIndex: =12
 
+    Icon3_3 As icon.Bell:
+        Height: =50
+        Icon: =Icon.Bell
+        OnSelect: |-
+            =/*Set(
+                SelectedNotification,
+                First(
+                    Filter(UserNotifications, !IsRead)
+                )
+            );
+            
+            // Mark the notification as read
+            Patch(
+                'Notifications List',
+                SelectedNotification,
+                {
+                    IsRead: true
+                }
+            );
+            
+            // Update the local collection
+            ClearCollect(
+                UserNotifications,
+                Filter('Notifications List', UserId = User().Email)
+            );
+            
+            // Update the count of unread notifications
+            Set(
+                UnreadNotificationCount,
+                CountRows(
+                    Filter(UserNotifications, !IsRead)
+                )
+            );
+            */
+            
+            Set(
+                SelectedNotification,
+                First(
+                    Filter(UserNotifications, !IsRead)
+                )
+            );
+            
+            Patch(
+                'Notifications List',
+                SelectedNotification,
+                {
+                    IsRead: true
+                }
+            );
+            
+            Remove(
+                'Notifications List',
+                SelectedNotification
+            );
+            
+            ClearCollect(
+                UserNotifications,
+                Filter('Notifications List', UserId = User().Email)
+            );
+            
+            Set(
+                UnreadNotificationCount,
+                CountRows(
+                    Filter(UserNotifications, !IsRead)
+                )
+            );
+            
+            Navigate('Screen2');
+             
+        Width: =50
+        X: =471
+        Y: =30
+        ZIndex: =16
+
+    Circle1 As circle:
+        Fill: |-
+            =If(
+                Label8_2.Text = "0",
+                RGBA(0, 0, 0, 0), // No color (black as default)
+                If(
+                    IsNumeric(Label8_2.Text),
+                    RGBA(184, 0, 0, 1), // Red color for numbers
+                    RGBA(0, 0, 0, 0) // Default color if it's not a number (black)
+                )
+            )
+        Height: =30
+        Width: =30
+        X: =491
+        Y: =23
+        ZIndex: =17
+
+    Label8_2 As label:
+        Align: =Align.Center
+        Height: =30
+        Text: |-
+            =/*CountRows(
+                Filter(
+                    'Notifications List',
+                    UserId = User().Email && !IsRead
+                )
+            )*/
+            
+            
+            (UnreadNotificationCount)
+        Width: =57
+        X: =506
+        Y: =13
+        ZIndex: =18
+

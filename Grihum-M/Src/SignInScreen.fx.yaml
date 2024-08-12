@@ -77,7 +77,7 @@ SignInScreen As screen:
                         
                         // Sign-in successful
                         Notify("Sign-in successful", NotificationType.Success);
-                        Navigate('Dashboard Screen') // Assuming 'Dashboard Screen' is your target screen
+                        Navigate('Screen1') // Assuming 'Dashboard Screen' is your target screen
                     )
                 );
                 
