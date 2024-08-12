@@ -13,7 +13,9 @@ HomeScreen As screen:
             RadiusBottomRight: =100
             RadiusTopLeft: =100
             RadiusTopRight: =100
-            Width: =640
+            Width: =400
+            X: =120
+            Y: =276
             ZIndex: =1
 
         SignInbtn As button:
@@ -22,30 +24,31 @@ HomeScreen As screen:
             Height: =70
             HoverFill: =ColorFade(Color.Red, 0.5)
             OnSelect: =Navigate(SignInScreen)
-            RadiusBottomLeft: =100
-            RadiusBottomRight: =100
-            RadiusTopLeft: =100
-            RadiusTopRight: =100
+            RadiusBottomLeft: =15
+            RadiusBottomRight: =15
+            RadiusTopLeft: =15
+            RadiusTopRight: =15
             Size: =20
             Text: ="Sign-In"
-            Width: =400
-            X: =120
-            Y: =779
+            Width: =500
+            X: =70
+            Y: =533
             ZIndex: =2
 
         CreateAccountbtn As button:
+            Fill: =RGBA(0, 13, 75, 1)
             Font: =Font.Verdana
             FontWeight: =FontWeight.Bold
             Height: =70
             OnSelect: =Navigate(SignUpScreen)
-            RadiusBottomLeft: =100
-            RadiusBottomRight: =100
-            RadiusTopLeft: =100
-            RadiusTopRight: =100
+            RadiusBottomLeft: =15
+            RadiusBottomRight: =15
+            RadiusTopLeft: =15
+            RadiusTopRight: =15
             Size: =20
             Text: ="Create Account"
-            Width: =400
-            X: =120
-            Y: =972
+            Width: =500
+            X: =70
+            Y: =675
             ZIndex: =3
 

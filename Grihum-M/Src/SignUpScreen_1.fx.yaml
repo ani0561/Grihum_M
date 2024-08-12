@@ -8,10 +8,6 @@ SignUpScreen_1 As screen:
         SignupLogoImg_1 As image:
             Height: =200
             Image: =image
-            RadiusBottomLeft: =100
-            RadiusBottomRight: =100
-            RadiusTopLeft: =100
-            RadiusTopRight: =100
             Width: =415
             X: =105
             Y: =92
