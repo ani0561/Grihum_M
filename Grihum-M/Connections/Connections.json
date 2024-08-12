@@ -15,14 +15,30 @@
     "datasets": {
       "https://digifac.sharepoint.com/sites/GrihumForumsSite": {
         "dataSources": {
+          "Comments List": {
+            "tableName": "4172cc1b-4d4c-476d-b65c-a67ee02fcf4d"
+          },
+          "Forums & Categories": {
+            "tableName": "e314e0b2-b795-493f-8a07-f547958258d4"
+          },
           "LoginDetails": {
             "tableName": "16070c85-5756-4284-956f-1327e352be6a"
+          },
+          "Notifications List": {
+            "tableName": "a6aa3fc3-4682-4de6-bc95-91d24e76245f"
+          },
+          "Questions List": {
+            "tableName": "c40254c3-d25c-4ba1-81e3-5f4faa79675f"
           }
         }
       }
     },
     "dataSources": [
-      "LoginDetails"
+      "LoginDetails",
+      "Comments List",
+      "Notifications List",
+      "Questions List",
+      "Forums & Categories"
     ],
     "dependencies": {},
     "dependents": [],
