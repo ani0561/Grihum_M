@@ -1,0 +1,275 @@
+SignUpScreen_1 As screen:
+
+    SignUpScreenContainer_1 As groupContainer.manualLayoutContainer:
+        Height: =Max(App.Height, App.DesignHeight)
+        Width: =Max(App.Width, App.DesignWidth)
+        ZIndex: =1
+
+        SignupLogoImg_1 As image:
+            Height: =200
+            Image: =image
+            RadiusBottomLeft: =100
+            RadiusBottomRight: =100
+            RadiusTopLeft: =100
+            RadiusTopRight: =100
+            Width: =415
+            X: =105
+            Y: =92
+            ZIndex: =3
+
+        TextInputsignupEmail_1 As text:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderThickness: =0
+            Default: =
+            Height: =70
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Size: =18
+            Width: =560
+            X: =40
+            Y: =374
+            ZIndex: =4
+
+        LabelsignupEmail_1 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =70
+            Size: =18
+            Text: ="USERNAME/EMAIL"
+            Width: =228
+            X: =40
+            Y: =326
+            ZIndex: =5
+
+        TextInputsignupp_1 As text:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderThickness: =0
+            Default: =
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Mode: =If(var_signuppassword_visible, TextMode.SingleLine, TextMode.Password)
+            Size: =18
+            Width: =480
+            X: =40
+            Y: =523
+            ZIndex: =6
+
+        Labelsignupp_1 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =64
+            Size: =18
+            Text: ="PASSWORD"
+            Width: =560
+            X: =40
+            Y: =478
+            ZIndex: =7
+
+        ButtonsignupCreateAccount_1 As button:
+            DisabledColor: |
+                =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(237, 237, 237, 1)
+            DisplayMode: |-
+                =/*If(
+                    !IsBlank(TextInputsignupEmail_1.Text) && 
+                    !IsBlank(TextInputsignupp_1.Text) && 
+                    !IsBlank(TextInputsignupcp_1.Text) && 
+                    (TextInputsignupp_1.Text = TextInputsignupcp_1.Text),
+                    DisplayMode.Edit,       
+                    DisplayMode.Disabled
+                )
+                */
+            Fill: =RGBA(0, 13, 75, 1)
+            Height: =70
+            HoverFill: =RGBA(0, 13, 75, 1)
+            OnSelect: |
+                =If(
+                    IsBlank(TextInputsignupEmail_1.Text),
+                    // If the email is empty
+                    Notify("Please enter the email.", NotificationType.Error),
+                    If(
+                        IsBlank(TextInputsignupp_1.Text),
+                        // If the password is empty
+                        Notify("Please enter the password.", NotificationType.Error),
+                        If(
+                            IsBlank(TextInputsignupcp_1.Text),
+                            // If the confirm password is empty
+                            Notify("Please enter the confirm password.", NotificationType.Error),
+                            If(
+                                TextInputsignupp_1.Text <> TextInputsignupcp_1.Text,
+                                // If the password and confirm password do not match
+                                Notify("Passwords do not match. Please ensure the password and confirm password are the same.", NotificationType.Error),
+                                If(
+                                    IsEmpty(Filter(LoginDetails, UserName = TextInputsignupEmail_1.Text)),
+                                    // If the user does not exist in LoginDetails
+                                    IfError(
+                                        Patch(
+                                            LoginDetails,
+                                            Defaults(LoginDetails),
+                                            {
+                                                UserName: TextInputsignupEmail_1.Text,
+                                                Password: TextInputsignupcp_1.Text
+                                            }
+                                        ),
+                                        // Patch error handling
+                                        Notify("Something went wrong: " & FirstError.Message, NotificationType.Error),
+                                        // Patch success handling
+                                        Notify("Data has been successfully saved.", NotificationType.Success)
+                                    ),Navigate(SignInScreen),
+                                    // If the user already exists in LoginDetails
+                                    Notify(
+                                        "User already has an existing account. Here is your username: " &
+                                        LookUp(LoginDetails, UserName = TextInputsignupEmail_1.Text).UserName,
+                                        NotificationType.Information
+                                    )
+                                )
+                            )
+                        )
+                    )
+                );
+                
+                // Reset all input fields
+                Reset(TextInputsignupEmail_1);
+                Reset(TextInputsignupp_1);
+                Reset(TextInputsignupcp_1);
+                
+                // Navigate to the sign-in screen
+                //Navigate(SignInScreen, ScreenTransition.UnCoverRight);
+            Size: =18
+            Text: ="Create Account"
+            Width: =322
+            X: =149
+            Y: =832
+            ZIndex: =8
+
+        TextInputsignupcp_1 As text:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderThickness: =0
+            Default: =
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Height: =70
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Mode: =If(var_signupcppassword_visible, TextMode.SingleLine, TextMode.Password)
+            Size: =18
+            Width: =480
+            X: =40
+            Y: =680
+            ZIndex: =9
+
+        Labelsignupcp_1 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =62
+            Size: =18
+            Text: ="CONFIRM PASSWORD"
+            Width: =560
+            X: =40
+            Y: =625
+            ZIndex: =10
+
+        Iconsignupp_1 As icon.Hide:
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =41
+            Icon: =If(var_signuppassword_visible,Icon.View,Icon.Hide)
+            OnSelect: |-
+                =UpdateContext({var_signuppassword_visible : !var_signuppassword_visible});
+            Width: =41
+            X: =520
+            Y: =542
+            ZIndex: =11
+
+        Iconsignupcp_1 As icon.Hide:
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =45
+            Icon: =If(var_signupcppassword_visible,Icon.View,Icon.Hide)
+            OnSelect: |-
+                =UpdateContext({var_signupcppassword_visible : !var_signupcppassword_visible});
+            Width: =41
+            X: =529
+            Y: =696
+            ZIndex: =12
+
+        Label5 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Color: =RGBA(255, 0, 0, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =58
+            Size: =21
+            Text: ="Login"
+            Width: =112
+            X: =435
+            Y: =935
+            ZIndex: =17
+
+        LabelsignupEmail_2 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Color: =RGBA(255, 0, 0, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =48
+            Size: =18
+            Text: ="*"
+            Width: =61
+            X: =249
+            Y: =328
+            ZIndex: =18
+
+        LabelsignupEmail_3 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Color: =RGBA(255, 0, 0, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =48
+            Size: =18
+            Text: ="*"
+            Width: =61
+            X: =172
+            Y: =477
+            ZIndex: =19
+
+        LabelsignupEmail_4 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Color: =RGBA(255, 0, 0, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =48
+            Size: =18
+            Text: ="*"
+            Width: =61
+            X: =289
+            Y: =630
+            ZIndex: =20
+
+        LabelsignupEmail_5 As label:
+            Color: =RGBA(116, 116, 116, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =83
+            Size: =21
+            Text: ="Already have an account?"
+            Width: =360
+            X: =87
+            Y: =922
+            ZIndex: =22
+
+        Rectangle4_1 As rectangle:
+            Fill: =RGBA(0, 13, 75, 1)
+            Height: =1
+            Width: =560
+            X: =40
+            Y: =600
+            ZIndex: =24
+
+        Rectangle4_2 As rectangle:
+            Fill: =RGBA(0, 13, 75, 1)
+            Height: =1
+            Width: =560
+            X: =39
+            Y: =759
+            ZIndex: =25
+
+        Rectangle4_3 As rectangle:
+            Fill: =RGBA(0, 13, 75, 1)
+            Height: =1
+            Width: =560
+            X: =40
+            Y: =449
+            ZIndex: =26
+

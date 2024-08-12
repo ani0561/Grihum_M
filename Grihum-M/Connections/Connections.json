@@ -1,0 +1,51 @@
+{
+  "4b074e39-553d-42f2-b85e-e7892608b76c": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read",
+      "providers/PowerPlatform.Governance/Operations/Write"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/jayawan/releases/v1.0.1697/1.0.1697.3786/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://digifac.sharepoint.com/sites/GrihumForumsSite": {
+        "dataSources": {
+          "LoginDetails": {
+            "tableName": "16070c85-5756-4284-956f-1327e352be6a"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "LoginDetails"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "4b074e39-553d-42f2-b85e-e7892608b76c"
+  },
+  "572620d6-e99d-44ba-91e7-4855d399c720": {
+    "appActions": [
+      "SendEmailV2"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1686/1.0.1686.3706/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Outlook"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "572620d6-e99d-44ba-91e7-4855d399c720"
+  }
+}

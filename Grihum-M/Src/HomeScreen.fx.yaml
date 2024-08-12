@@ -1,0 +1,51 @@
+HomeScreen As screen:
+    Fill: =RGBA(255, 255, 255, 1)
+
+    HomeScreenContainer As groupContainer.manualLayoutContainer:
+        Height: =Max(App.Height, App.DesignHeight)
+        Width: =Max(App.Width, App.DesignWidth)
+        ZIndex: =1
+
+        LogoImg As image:
+            Height: =200
+            Image: =image
+            RadiusBottomLeft: =100
+            RadiusBottomRight: =100
+            RadiusTopLeft: =100
+            RadiusTopRight: =100
+            Width: =640
+            ZIndex: =1
+
+        SignInbtn As button:
+            Fill: =RGBA(184, 0, 0, 1)
+            Font: =Font.Verdana
+            Height: =70
+            HoverFill: =ColorFade(Color.Red, 0.5)
+            OnSelect: =Navigate(SignInScreen)
+            RadiusBottomLeft: =100
+            RadiusBottomRight: =100
+            RadiusTopLeft: =100
+            RadiusTopRight: =100
+            Size: =20
+            Text: ="Sign-In"
+            Width: =400
+            X: =120
+            Y: =779
+            ZIndex: =2
+
+        CreateAccountbtn As button:
+            Font: =Font.Verdana
+            FontWeight: =FontWeight.Bold
+            Height: =70
+            OnSelect: =Navigate(SignUpScreen)
+            RadiusBottomLeft: =100
+            RadiusBottomRight: =100
+            RadiusTopLeft: =100
+            RadiusTopRight: =100
+            Size: =20
+            Text: ="Create Account"
+            Width: =400
+            X: =120
+            Y: =972
+            ZIndex: =3
+

@@ -1,0 +1,493 @@
+"Screen1 As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+
+    RectQuickActionBar1 As rectangle:
+        Fill: =RGBA(215, 223, 240, 0.47)
+        Height: =88
+        Width: =Parent.Width
+        ZIndex: =1
+
+    Canvas1 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =Parent.Height - Self.Y
+        Width: =Parent.Width
+        Y: =RectQuickActionBar1.Y + RectQuickActionBar1.Height
+        ZIndex: =3
+
+        DataCard1 As dataCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =1270
+            Width: =Parent.Width
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            Rectangle4 As rectangle:
+                Fill: =RGBA(0, 13, 75, 1)
+                Height: =130
+                Width: =640
+                ZIndex: =1
+
+            Rectangle2_4 As rectangle:
+                Fill: =RGBA(50, 86, 160, 1)
+                Height: =60
+                Width: =65
+                X: =60
+                Y: =65
+                ZIndex: =2
+
+            Triangle1_2 As triangle:
+                Fill: =RGBA(204, 102, 201, 0.78)
+                Height: =60
+                Width: =60
+                ZIndex: =3
+
+            Rectangle1_2 As rectangle:
+                Fill: =RGBA(136, 160, 209, 1)
+                Height: =40
+                Width: =40
+                X: =72
+                Y: =75
+                ZIndex: =4
+
+            TextInput2 As text:
+                Default: ="Search"
+                Height: =60
+                RadiusBottomLeft: =15
+                RadiusBottomRight: =15
+                RadiusTopLeft: =15
+                RadiusTopRight: =15
+                Size: =21
+                Width: =350
+                X: =26
+                Y: =35
+                ZIndex: =5
+
+            Label4_1 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =30
+                Size: =21
+                Text: ="Filter"
+                Width: =90
+                X: =495
+                Y: =65
+                ZIndex: =6
+
+            "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+                DelayItemLoading: =true
+                Fill: =RGBA(215, 223, 240, 0.47)
+                Height: =937
+                Items: =CustomGallerySample
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplatePadding: =0
+                TemplateSize: =603
+                Y: =130
+                ZIndex: =7
+
+                Separator2 As rectangle:
+                    BorderColor: =RGBA(116, 116, 116, 1)
+                    BorderThickness: =1
+                    Fill: =RGBA(149, 149, 149, 1)
+                    Height: =1
+                    OnSelect: =Select(Parent)
+                    Width: =Parent.TemplateWidth
+                    Y: =Parent.TemplateHeight - Self.Height
+                    ZIndex: =5
+
+                Container5 As groupContainer.manualLayoutContainer:
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =596
+                    Width: =640
+                    ZIndex: =7
+
+                    Image3_1 As image:
+                        Height: =60
+                        Image: =User().Image
+                        RadiusBottomLeft: =60
+                        RadiusBottomRight: =60
+                        RadiusTopLeft: =60
+                        RadiusTopRight: =60
+                        Width: =60
+                        X: =45
+                        Y: =38
+                        ZIndex: =1
+
+                    Label6 As label:
+                        FontWeight: =FontWeight.Bold
+                        Height: =30
+                        Size: =21
+                        Text: ="Ghfl Forum"
+                        Width: =300
+                        X: =123
+                        Y: =38
+                        ZIndex: =2
+
+                    Label7 As label:
+                        Height: =30
+                        Size: =18
+                        Text: =User().FullName
+                        Width: =300
+                        X: =125
+                        Y: =68
+                        ZIndex: =3
+
+                    Image4 As image:
+                        Height: =60
+                        Image: ='1134458195'
+                        ImagePosition: =ImagePosition.Fill
+                        RadiusBottomLeft: =60
+                        RadiusBottomRight: =60
+                        RadiusTopLeft: =60
+                        RadiusTopRight: =60
+                        Width: =60
+                        X: =522
+                        Y: =38
+                        ZIndex: =4
+
+                    Button1 As button:
+                        BorderThickness: =0
+                        Color: =RGBA(0, 0, 0, 1)
+                        Fill: =RGBA(215, 223, 240, 1)
+                        RadiusBottomLeft: =25
+                        RadiusBottomRight: =25
+                        RadiusTopLeft: =25
+                        RadiusTopRight: =25
+                        Text: ="Answered"
+                        X: =45
+                        Y: =136
+                        ZIndex: =5
+
+                    Label3_9 As label:
+                        Size: =16
+                        Text: ="Applicaion flow"
+                        Width: =300
+                        X: =45
+                        Y: =206
+                        ZIndex: =6
+
+                    Label3_10 As label:
+                        Color: =RGBA(0, 94, 146, 1)
+                        FontWeight: =FontWeight.Semibold
+                        OnSelect: =
+                        Size: =20
+                        Text: ="Ghfl home  loan"
+                        Underline: =true
+                        Width: =400
+                        X: =39
+                        Y: =246
+                        ZIndex: =7
+
+                    Label3_11 As label:
+                        FontWeight: =FontWeight.Bold
+                        Height: =32
+                        Size: =16
+                        Text: |-
+                            ="Last Replies:"
+                        Width: =147
+                        X: =45
+                        Y: =296
+                        ZIndex: =8
+
+                    Label3_12 As label:
+                        FontWeight: =FontWeight.Semibold
+                        Height: =32
+                        Size: =16
+                        Text: |-
+                            ="4 Aug 2024  14:11:37"
+                        Width: =250
+                        X: =187
+                        Y: =296
+                        ZIndex: =9
+
+                    Label3_14 As label:
+                        FontWeight: =FontWeight.Semibold
+                        Height: =32
+                        Size: =16
+                        Text: =
+                        Width: =250
+                        X: =253
+                        Y: =490
+                        ZIndex: =11
+
+                    Label2_12 As label:
+                        FontWeight: =FontWeight.Bold
+                        Height: =50
+                        OnSelect: =
+                        Size: =20
+                        Text: ="Reply"
+                        Width: =128
+                        X: =97
+                        Y: =511
+                        ZIndex: =15
+
+                    Label2_13 As label:
+                        FontWeight: =FontWeight.Bold
+                        Height: =50
+                        Size: =20
+                        Text: ="Likes()"
+                        Width: =128
+                        X: =296
+                        Y: =511
+                        ZIndex: =16
+
+                    Icon13 As icon.ThumbsUp:
+                        Height: =35
+                        Icon: =Icon.ThumbsUp
+                        Width: =50
+                        X: =246
+                        Y: =518
+                        ZIndex: =17
+
+                    Label8 As label:
+                        Height: =107
+                        Overflow: =Overflow.Scroll
+                        Size: =18
+                        Text: ="How to fill the ghfl 12 steps application form in online can you explain how to fill the form without any errors in it"
+                        Width: =560
+                        X: =45
+                        Y: =345
+                        ZIndex: =18
+
+                    Icon10 As icon.Message:
+                        Height: =40
+                        Icon: =Icon.Message
+                        Width: =50
+                        X: =47
+                        Y: =522
+                        ZIndex: =19
+
+            Icon9 As icon.Search:
+                Color: =RGBA(0, 13, 75, 1)
+                Height: =40
+                Icon: =Icon.Search
+                Width: =50
+                X: =313
+                Y: =42
+                ZIndex: =8
+
+            Label4_7 As label:
+                Align: =Align.Center
+                BorderThickness: =1
+                FocusedBorderThickness: =1
+                Height: =60
+                Size: =18
+                Text: =
+                Width: =226
+                X: =205
+                Y: =1144
+                ZIndex: =9
+
+            Button2 As button:
+                DisplayMode: |-
+                    =If(
+                        glbCurrentPage > 1,
+                        DisplayMode.Edit,
+                        DisplayMode.Disabled
+                    )
+                Fill: =RGBA(0, 16, 96, 1)
+                Height: =60
+                OnSelect: =If(glbCurrentPage > 1, Set(glbCurrentPage, glbCurrentPage - 1))
+                Size: =19
+                Text: ="<<"
+                Width: =60
+                X: =108
+                Y: =1144
+                ZIndex: =10
+
+            Button2_1 As button:
+                DisplayMode: =
+                Fill: =RGBA(0, 16, 96, 1)
+                Height: =60
+                OnSelect: =
+                Size: =19
+                Text: =">>"
+                Width: =60
+                X: =471
+                Y: =1144
+                ZIndex: =11
+
+    Icon5 As icon.Search:
+        Color: =RGBA(0, 0, 0, 1)
+        Icon: =Icon.Search
+        X: =89
+        Y: =12
+        ZIndex: =5
+
+    Icon6 As icon.Bell:
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =60
+        Icon: =Icon.Bell
+        Width: =60
+        X: =471
+        Y: =15
+        ZIndex: =6
+
+    Image3 As image:
+        Height: =60
+        Image: =User().Image
+        OnSelect: |-
+            =UpdateContext({ShowProfile: !ShowProfile})
+        RadiusBottomLeft: =60
+        RadiusBottomRight: =60
+        RadiusTopLeft: =60
+        RadiusTopRight: =60
+        Width: =60
+        X: =563
+        Y: =13
+        ZIndex: =7
+
+    Circle1 As circle:
+        Fill: =RGBA(184, 0, 0, 1)
+        Height: =36
+        Width: =36
+        X: =508
+        Y: =9
+        ZIndex: =8
+
+    Image1_1 As image:
+        Height: =90
+        Image: =image
+        Width: =220
+        X: =198
+        ZIndex: =10
+
+    Icon7 As icon.Add:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =50
+        Icon: =Icon.Add
+        Width: =70
+        X: =394
+        Y: =100
+        ZIndex: =11
+
+    Label4 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =30
+        Size: =21
+        Text: ="Post"
+        Width: =75
+        X: =394
+        Y: =150
+        ZIndex: =12
+
+    Icon8 As icon.Filter:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =50
+        Icon: =Icon.Filter
+        X: =508
+        Y: =100
+        ZIndex: =13
+
+    Icon11 As icon.Hamburger:
+        Color: =RGBA(0, 13, 75, 1)
+        Height: =50
+        Icon: =Icon.Hamburger
+        Width: =50
+        X: =22
+        Y: =20
+        ZIndex: =14
+
+    Container1_1 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.ExtraBold
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =334
+        RadiusBottomLeft: =7
+        RadiusBottomRight: =7
+        RadiusTopLeft: =7
+        RadiusTopRight: =7
+        Visible: =ShowProfile
+        Width: =360
+        X: =279
+        Y: =90
+        ZIndex: =15
+
+        Label2_1 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =43
+            Size: =14
+            Text: =User().FullName
+            Visible: =ShowProfile
+            Width: =216
+            X: =94
+            Y: =19
+            ZIndex: =2
+
+        Label2_2 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =39
+            Size: =14
+            Text: =User().Email
+            Visible: =ShowProfile
+            Width: =236
+            X: =94
+            Y: =46
+            ZIndex: =3
+
+        Label2_7 As label:
+            Color: =RGBA(0, 121, 187, 1)
+            FontWeight: =FontWeight.Semibold
+            Size: =14
+            Text: ="Sign Out"
+            Visible: =ShowProfile
+            Width: =273
+            X: =37
+            Y: =270
+            ZIndex: =8
+
+        Rectangle3 As rectangle:
+            Height: =1
+            Width: =307
+            X: =23
+            Y: =113
+            ZIndex: =9
+
+        Button3 As button:
+            Align: =Align.Left
+            Color: =RGBA(0, 121, 187, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =36
+            HoverColor: =RGBA(0, 121, 187, 1)
+            HoverFill: =
+            PressedColor: =RGBA(153, 207, 236, 1)
+            Size: =14
+            Text: ="Profile"
+            Width: =180
+            X: =37
+            Y: =137
+            ZIndex: =10
+
+        Button3_1 As button:
+            Align: =Align.Left
+            Color: =RGBA(0, 121, 187, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =38
+            HoverColor: =RGBA(0, 121, 187, 1)
+            HoverFill: =
+            PressedColor: =RGBA(153, 207, 236, 1)
+            Size: =14
+            Text: ="Messages"
+            Width: =180
+            X: =37
+            Y: =168
+            ZIndex: =11
+
+        Button3_2 As button:
+            Align: =Align.Left
+            Color: =RGBA(0, 121, 187, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =36
+            HoverColor: =RGBA(0, 121, 187, 1)
+            HoverFill: =
+            PressedColor: =RGBA(153, 207, 236, 1)
+            Size: =14
+            Text: ="My Activity"
+            Width: =180
+            X: =40
+            Y: =222
+            ZIndex: =12
+
