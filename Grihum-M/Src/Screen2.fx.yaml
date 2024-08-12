@@ -67,9 +67,11 @@ Screen2 As screen:
                         ZIndex: =3
 
                     Dropdown1 As dropdown:
-                        ChevronBackground: =Color.DarkBlue
+                        ChevronBackground: =RGBA(255, 255, 255, 1)
+                        ChevronFill: =RGBA(0, 0, 0, 1)
+                        Default: =
                         Height: =70
-                        Items: =DropDownSample
+                        Items: =Sort(Distinct('Forums & Categories',Forum),Value)
                         Size: =21
                         Width: =550
                         X: =40
@@ -155,11 +157,13 @@ Screen2 As screen:
                         ZIndex: =14
 
                     Dropdown3 As dropdown:
-                        ChevronBackground: =Color.DarkBlue
+                        ChevronBackground: =RGBA(255, 255, 255, 1)
+                        ChevronFill: =RGBA(0, 0, 0, 1)
                         ChevronHoverBackground: =Color.DarkBlue
-                        DisplayMode: =DisplayMode.Disabled
+                        Default: =
+                        DisplayMode: =If(IsBlank(Dropdown1.Selected.Value), DisplayMode.Disabled, DisplayMode.Edit)
                         Height: =70
-                        Items: =DropDownSample
+                        Items: =Filter('Forums & Categories', Forum = Dropdown1.Selected.Value)
                         Size: =21
                         Width: =550
                         X: =40
@@ -182,7 +186,7 @@ Screen2 As screen:
                                 IsBlank(RichTextEditor1.HtmlText),
                                 Notify("Please enter a Description.", NotificationType.Error);
                                 ,
-                                IsBlank(Dropdown3.Selected.Value),
+                                IsBlank(Dropdown3.Selected.Categories),
                                 Notify("Please select a Category.", NotificationType.Error);
                                 ,
                                 // Step 2: Post the new question if all fields are filled
@@ -195,7 +199,7 @@ Screen2 As screen:
                                             Forum: Dropdown1.Selected.Value,
                                             Subject: TextInput3.Text,
                                             Description: RichTextEditor1.HtmlText,
-                                            Categories: Dropdown3.Selected.Value
+                                            Categories: Dropdown3.Selected.Categories
                                         }
                                     )
                                 );
