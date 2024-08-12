@@ -156,7 +156,7 @@ SignInScreen As screen:
             PressedColor: =RGBA(151, 0, 0, 1)
             PressedFill: =RGBA(151, 0, 0, 1)
             Size: =18
-            Text: ="Forgot Password?"
+            Text: ="Forgot Password"
             Underline: =true
             Width: =380
             X: =214
