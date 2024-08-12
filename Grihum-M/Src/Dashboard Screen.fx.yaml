@@ -1,4 +1,4 @@
-"Screen1 As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+"'Dashboard Screen' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
 
     RectQuickActionBar1 As rectangle:
         Fill: =RGBA(215, 223, 240, 0.47)

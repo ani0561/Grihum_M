@@ -102,7 +102,7 @@
       "zeroalltabindexes": true
     },
     "Author": "",
-    "BindingErrorCount": 2,
+    "BindingErrorCount": 1,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "Phone",
@@ -119,13 +119,13 @@
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "",
     "ManualOfflineProfileId": "",
-    "Name": "GHFL_NAIDU1",
+    "Name": "Ghfl Forum final",
     "OriginatingVersion": "1.343",
     "ParserErrorCount": 0,
     "ShowStatusBar": false
   },
   "PublishInfo": {
-    "AppName": "GHFL_NAIDU",
+    "AppName": "Ghfl Forum final",
     "BackgroundColor": "RGBA(0,176,240,1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Edit",
@@ -139,8 +139,8 @@
     "HomeScreen",
     "SignInScreen",
     "OtpValidationScreen",
-    "Screen1",
+    "Dashboard Screen",
     "SignUpScreen_1",
-    "Screen2"
+    "Post Screen"
   ]
 }

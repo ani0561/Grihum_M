@@ -15,12 +15,11 @@ HomeScreen As screen:
             RadiusTopRight: =100
             Width: =400
             X: =120
-            Y: =276
+            Y: =208
             ZIndex: =1
 
         SignInbtn As button:
             Fill: =RGBA(184, 0, 0, 1)
-            Font: =Font.Verdana
             Height: =70
             HoverFill: =ColorFade(Color.Red, 0.5)
             OnSelect: =Navigate(SignInScreen)
@@ -32,13 +31,11 @@ HomeScreen As screen:
             Text: ="Sign-In"
             Width: =500
             X: =70
-            Y: =533
+            Y: =465
             ZIndex: =2
 
         CreateAccountbtn As button:
             Fill: =RGBA(0, 13, 75, 1)
-            Font: =Font.Verdana
-            FontWeight: =FontWeight.Bold
             Height: =70
             OnSelect: =Navigate(SignUpScreen)
             RadiusBottomLeft: =15
@@ -49,6 +46,15 @@ HomeScreen As screen:
             Text: ="Create Account"
             Width: =500
             X: =70
-            Y: =675
+            Y: =590
             ZIndex: =3
+
+        Image2 As image:
+            Height: =250
+            Image: ='png-transparent-house-renting-room-property-home-house-building-apartment-room-removebg-preview'
+            ImagePosition: =ImagePosition.Fill
+            Width: =348
+            X: =146
+            Y: =711
+            ZIndex: =4
 

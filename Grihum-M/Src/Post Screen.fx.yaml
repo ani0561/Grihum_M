@@ -1,4 +1,4 @@
-Screen2 As screen:
+"'Post Screen' As screen":
 
     RectQuickActionBar2 As rectangle:
         Fill: =Color.White
@@ -280,18 +280,11 @@ Screen2 As screen:
                         Color: =RGBA(0, 13, 75, 1)
                         Fill: =RGBA(255, 255, 255, 1)
                         Height: =60
-                        OnSelect: =Navigate(Screen1)
+                        OnSelect: =Navigate('Dashboard Screen')
                         Text: ="Cancel"
                         X: =277
                         Y: =1229
                         ZIndex: =17
-
-    Icon5_1 As icon.Search:
-        Color: =RGBA(0, 0, 0, 1)
-        Icon: =Icon.Search
-        X: =86
-        Y: =12
-        ZIndex: =4
 
     Icon6_1 As icon.Bell:
         Color: =RGBA(0, 0, 0, 1)
