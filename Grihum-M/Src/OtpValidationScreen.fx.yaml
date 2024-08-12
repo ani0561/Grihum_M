@@ -37,6 +37,7 @@ OtpValidationScreen As screen:
             ZIndex: =5
 
         ValidateOTPbtn As button:
+            Fill: =RGBA(0, 13, 75, 1)
             Height: =70
             OnSelect: |
                 =If(

@@ -119,7 +119,7 @@
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "",
     "ManualOfflineProfileId": "",
-    "Name": "GHFL_NAIDU1",
+    "Name": "Ghfl Forum final",
     "OriginatingVersion": "1.343",
     "ParserErrorCount": 0,
     "ShowStatusBar": false
@@ -139,8 +139,8 @@
     "HomeScreen",
     "SignInScreen",
     "OtpValidationScreen",
-    "Screen1",
+    "Dashboard Screen",
     "SignUpScreen_1",
-    "Screen2"
+    "Post Screen"
   ]
 }
