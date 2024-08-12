@@ -322,6 +322,41 @@
         Color: =RGBA(0, 0, 0, 1)
         Height: =60
         Icon: =Icon.Bell
+        OnSelect: |-
+            =Set(
+                SelectedNotification,
+                First(
+                    Filter(UserNotifications, !IsRead)
+                )
+            );
+            
+            Patch(
+                'Notifications List',
+                SelectedNotification,
+                {
+                    IsRead: true
+                }
+            );
+            
+            Remove(
+                'Notifications List',
+                SelectedNotification
+            );
+            
+            ClearCollect(
+                UserNotifications,
+                Filter('Notifications List', UserId = User().Email)
+            );
+            
+            Set(
+                UnreadNotificationCount,
+                CountRows(
+                    Filter(UserNotifications, !IsRead)
+                )
+            );
+            
+            Navigate('Screen2');
+             
         Width: =60
         X: =471
         Y: =15
@@ -342,7 +377,16 @@
         ZIndex: =7
 
     Circle1 As circle:
-        Fill: =RGBA(184, 0, 0, 1)
+        Fill: |-
+            =If(
+                Label13.Text = "0",
+                RGBA(0, 0, 0, 0), // No color (black as default)
+                If(
+                    IsNumeric(Label3.Text),
+                    RGBA(184, 0, 0, 1), // Red color for numbers
+                    RGBA(0, 0, 0, 0) // Default color if it's not a number (black)
+                )
+            )
         Height: =36
         Width: =36
         X: =508
@@ -360,6 +404,7 @@
         Color: =RGBA(255, 255, 255, 1)
         Height: =50
         Icon: =Icon.Add
+        OnSelect: =Navigate(Screen2)
         Width: =70
         X: =394
         Y: =100
@@ -490,4 +535,12 @@
             X: =40
             Y: =222
             ZIndex: =12
+
+    Label13 As label:
+        Height: =45
+        Size: =21
+        Text: =(UnreadNotificationCount)
+        Width: =36
+        X: =508
+        ZIndex: =16
 
